@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">	
+	<title>9/19微積分筆記(區間，實數加法、乘法、比較性質,絕對值)</title>
+</head>
+<body>
+<h1 title="對應Thomas'Calculus Twelfth Edition A.2" style="font-size:300%;font-family:DFKai-sb">微積分筆記2</h1><hr>
+<h3 style="font-size:170%;font-family:DFKai-sb">Intervals 區間</h3>
+<pre style="font-size:140%;font-family:DFKai-sb">Def1: A subset of the real line is called an unterval if it
+	contains at least two numbers and contains all real numbers lying between any two of its elements.</pre>
+<pre style="font-size:140%;font-family:DFKai-sb">	Type of intervals:
+ 
+ 	(0,1)={x&#8712&#8477:0&#60 x&#60 1} (open)</pre>
+<img src="11號.jpg"width= "480" height="120">
+<pre style="font-size:140%;font-family:DFKai-sb">	(a,b)={x&#8712&#8477:a&#60 x&#60 b} (open)</pre>
+<img src="5號.jpg"width= "480" height="120">
+<pre style="font-size:140%;font-family:DFKai-sb">	[a,b]={x&#8712&#8477:a&#8804 x&#8804 b} (closed)</pre>
+<img src="4號.jpg"width= "480" height="120">
+<pre style="font-size:140%;font-family:DFKai-sb">	[a,b)={x&#8712&#8477:a&#60 x&#8804 b} (half-open)</pre>
+<img src="3號.jpg"width= "480" height="120">
+<pre style="font-size:140%;font-family:DFKai-sb">	(a,&#8734)={x&#8712&#8477:x&#62 a} (open)</pre>
+<img src="2號.jpg"width= "480" height="120">
+<pre style="font-size:140%;font-family:DFKai-sb">	(&#8734,b]={x&#8712&#8477:b&#8804 x} (closed)</pre>
+<img src="9號.jpg"width= "480" height="120">
+<pre style="font-size:140%;font-family:DFKai-sb">	(&#8734,&#8734)=&#8477={x&#8712&#8477:-&#8734&#60x&#60 &#8734} (Both open and closed)</pre>
+<img src="10號.jpg"width= "480" height="120">
+<h3 style="font-size:170%;font-family:DFKai-sb">Theory of the Real Numbers(實數的定理)</h3>
+<pre style="font-size:140%;font-family:DFKai-sb">A: addition properties(加法性質)     
+	
+	A1:a+(b+c)=(a+b)+c for all a,b,c
+	A2:a+b=b+a for all a,b
+	A3:There is a number called "0" such that a+0=a for all a.
+	A4:For each number a,there is a such that a+b=0
+
+M: multiplication properties(乘法性質)
+	
+	M1:a(bc)=(ab) 
+	M2:ab=ba for all a,b
+	M3:There is a number called "1" such that a*1=a for all a
+	M4:For each nonzero a,there is a b such that ab=1
+
+Distributive分配律
+	
+	D(Distributive分配律):a(b+c)=ab+ac for all a,b,c
+
+O: order properties(比較性質) 
+	
+	O1:For any a and b,either a&#8804b or b&#8804a or both
+	O2:If a&#8804b and b&#8804a then a=b
+	O3:If a&#8804b and b&#8804c then a&#8804c
+	O4:If a&#8804b then a+c&#8804b+c
+	O5:If a&#8804b and 0&#8804c then ac&#8804bc</pre>
+<pre style="font-size:140%;font-family:DFKai-sb">	ex1:  <sup>6</sup>&frasl;<sub>(x-1)</sub>&#8805 5  
+	(x &#62 1  ,從x &#60 1會變號 ,x=1沒有定義)
+ 	&#8658 <sup>(byO5)</sup> 6&#8805 5(x-1)=5x-5
+ 	&#8658 <sup>(byO5)</sup>  <sup>11</sup>&frasl;<sub>5</sub>	&#8805 x
+	&#8756 interval:(-&#8734,<sup>11</sup>&frasl;<sub>5</sub>)&#8898(1,&#8734)=(1,<sup>11</sup>&frasl;<sub>5</sub>)</pre>
+<h3 style="font-size:170%;font-family:DFKai-sb"> Absolute Value(絕對值) </h3>
+<pre style="font-size:140%;font-family:DFKai-sb">
+Def2: &#8739a&#8739=a,if a &#8805 0 &#8739a&#8739=-a,if a &#8804 0
+	
+	1)&#8739a&#8739&#8805 0 &#8704a
+	2)&#8739-a&#8739=&#8739a&#8739&#8805  &#8704a
+	3)&#8739a&#8739=0 &#8660 a=0
+	4)&#8730<sub>a</sub><sup>2</sup>=&#8739a&#8739
+Thm1: Absolute Value and intervals(絕對值與區間)
+	
+	1)&#8739ab&#8739=&#8739a&#8739&#8739b&#8739
+	2)&#8739<sup>a</sup>&frasl;<sub>b&#8739</sub>=<sup>&#8739a&#8739</sup>&frasl;<sub>&#8739b&#8739</sub>
+	3)&#8739a&#8739 &#8804 M &#8660 -M&#8804a&#8804M
+	4)&#8739a&#8739 &#8804 M &#8804 0 &#8660 a&#8804M or a&#8805M
+	
+	proof 3)suppose &#8739a&#8739&#8804M     ('&#8658')
+			Case1: 0 &#8804 a=&#8739a&#8739&#8804M  
+			&#8757 M&#8804 0 &#8756 -M&#8805 0
+			&#8756 -M&#8804 0 &#8804 a &#8804 M 
+		 Case2: a &#60 0
+			&#8757 -a=&#8739a&#8739&#8804 M
+			&#8756 a &#8805 -M  
+			&#8756 -M&#8804 0 &#8804 a &#8804 M 
+
+		suppose -M &#8804 a &#8804 M  ('&#8656')
+		
+		Case1: a&#8805 0
+			&#8756&#8739a&#8739= a &#8804 M
+		Case2: a&#60 0 
+			&#8756 -M &#8804 a &#8658 -a &#8804 M
+			&#8756&#8739a&#8739= -a&#8804 M
+Thm2: triangle inequality(三角不等式):
+	
+	1)&#8739a+b&#8739 &#8804 &#8739a&#8739 +&#8739b&#8739
+	2)&#8739a-b&#8739 &#8805 &#8739a&#8739 -&#8739b&#8739
+		proof: 1)&#8757 &#8739x&#8739&#8804  &#8739x&#8739 &#8704x
+			 &#8756 -x  &#8804 x  &#8804 &#8739x&#8739 &#8704x
+		         &#8756-&#8739a&#8739 &#8804 a &#8804 &#8739a&#8739 and -&#8739b&#8739&#8804 &#8804 b &#8804 &#8739b&#8739
+		       	  &#8658 -(&#8739a&#8739+&#8739b&#8739) &#8804 a+b &#8804 &#8739a&#8739+&#8739b&#8739
+		 	  &#8658 &#8739a&#8739+&#8739b&#8739 &#8804  &#8739a&#8739+&#8739b&#8739
+		       2)&#8739a&#8739 = &#8739(a-b)+b&#8739& &#8804 &#8739a-b&#8739+&#8739b&#8739
+		       &#8756 &#8739a&#8739-&#8739b&#8739 &#8804 &#8739a-b&#8739
+		       similarly &#8739b&#8739-&#8739a&#8739 &#8804 &#8739b-a&#8739=&#8739a-b&#8739
+		       &#8756 -&#8739a-b&#8739 &#8804 &#8739a&#8739-&#8739b&#8739 &#8804 &#8739a-b&#8739
+		       &#8739&#8739b&#8739-&#8739a&#8739&#8739 &#8804 &#8739a-b&#8739</pre>
+<pre style="font-size:140%;font-family:DFKai-sb">	ex1: &#8739 2x-3&#8739=7
+	 	
+	 	2x-3 &#8804 0         2x-3 &#60 0
+	 	2x-3=7         or     3-2x=7
+	 	2x=10                 -4=2x
+	 	x=5                   x=-2 
+
+	 	ex2: &#8739 5-<sup>2</sup>&frasl;<sub>x</sub> &#8739 &#8804 1
+	 	-1 &#8804 5-<sup>2</sup>&frasl;<sub>x</sub>&#60 1
+	 	-6 &#60 -<sup>2</sup>&frasl;<sub>x</sub> &#60 -4
+	 	3 &#62 <sup>1</sup>&frasl;<sub>x</sub> &#62 2
+	 	<sup>1</sup>&frasl;<sub>3</sub> &#60 x &#60 <sup>1</sup>&frasl;<sub>2</sub>
+	 	(<sup>1</sup>&frasl;<sub>3</sub>,<sup>1</sup>&frasl;<sub>2</sub>)
+<h3 style="font-size:170%;font-family:DFKai-sb"> function(函數) </h3>	 	
+Def1(informal非正式):
+	A function f from a set D to a set Y is a<b> rule(不恰當)</b> that assign a unique f(x)&#8712Y to each element x&#8712D
+
+	ex1: f:D &#8594 Y
+	
+	f(x)=x<sup>2</sup> :&#8477 &#8594 &#8477
+
+	D<sub>f</sub>=D=domain=&#8477 定義域
+	Y=codomain 對應域
+	R<sub>f</sub>={f(x)&#8712Y:x&#8712D}=range=&#8477 值域
+	R<sub>f</sub>=[0,&#8734)
+
+	ex2: f(x)=&#8730x D<sub>f</sub>=[0,&#8734 R<sub>f</sub>=[0,&#8734)
+
+	ex3: f(x)=&#8730(4-x) D<sub>f</sub>=(-&#8734,4] R<sub>f</sub>=[0,&#8734)
+
+	
+	
+Def2(Graph of function): Let f:D<sub>f</sub>&#8594 &#8477 be a function 
+	The graph of f is g<sub>f</sub>={(x,f(x)):x&#8712D<sub>f</sub>}
+	ex1:f(x)=x<sup>2</sup>
+		g<sub>f</sub>={(0,0),(&#177 1,1) (&#177 2,4)} (graph平面的子集合)
+(補充(Cartesian product笛卡兒積):Def1: Let D and Y be two sets 
+	The Cartesian product of D and Y is DxY={(d,y):d&#8712 D and y&#8712Y}
+
+    ex1:D={1,2} Y={3,4}
+        D*Y={(1,3),(1,4),(2,3),(2,4)} 
+    
+    ex2:D=&#8477 Y=&#8477
+    	D*Y=&#8477<sup>2</sup>
+        
+    																	)
+Def3(函數正式定義): Let D and Y be sets f&#8838D*Y is an function 
+	from D to Y if 
+	1)&#8704 x&#8838D,&#8707y&#8838Y s.t.(such that) (x,y)&#8838f
+	2)if(x<sub>1</sub>,y<sub>1</sub>)&#8838f and (x<sub>1</sub>,y<sub>2</sub>)&#8838f,then y<sub>1</sub>=y<sub>2</sub>
+<pre style="font-size:140%;font-family:DFKai-sb">待補</pre>
+<a href="https://octopustrashcan.github.io/study/Title.html">回到標題</a>
+</body>
+</html>
