@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">	
+	<title></title>
+</head>
+<body>
+<pre style="font-size:140%;font-family:DFKai-sb">Def1:
+ Consider two sets A and B,whose elements may be any objects whatsoever,and  suppose that with each element x of A there is associated
+ ,in some manner,an element of B,which we denote by f(x)
+.Than f is said to be a function from A to B (or a mapping of A into B)
+,The set A is called the domain of f(we also say F is defined on A)
+,and the elements f(x) are called the values of f.
+ the set of all values of f is called the range of f
+(定義1:考慮兩個集合A和B，其元素可以是任何對象，
+並假設對於A的每個元素x，以某種方式與B的元素相關聯，
+我們用f（x）表示。f是被稱為從A到B的函數（或A到(into)B的映射）
+，集合A稱為f的定義域（我們也說F在A上定義），元素f（x）被稱為f的值, f的所有值的集合稱為f的值域。)
+Def2: 
+Let A and B be two sets and let f be a mapping of A into B. If E&#8838 A
+, f(E) is defined to be the set of all elements f(x) ,for x&#8712 E.
+we call f(E) the image of E under f. In this notation,f(A) is the range of f.
+ It is clear that f(A)&#8838B. If f(A)=B ,we say that f maps A onto B. 
+ (Note that,according to this usage,onto is more specific than into.) 
+If E &#8838 B ,f<sup>-1</sup>(E) the inverse image of E under f. 
+If y&#8712 B,f<sup>-1</sup>(y)is the set of all x&#8712 A such that f(x)=y.
+If,for each y&#8712 B,f<sup>-1</sup>(y) consists of at most one element of A
+,than f is said to be a 1-1(one to one) mapping of A into B. 
+ This may also be expressed as follows:f is a 1-1 mapping of Ainto B provided that f(x<sub>1</sub>)&#8800f(x<sub>2</sub>) whenever x<sub>1</sub> &#8800 x<sub>2</sub> 
+ , x<sub>1</sub>&#8712A,x<sub>2</sub>&#8712A.(The notation x<sub>1</sub> &#8800 x<sub>2</sub> means that x<sub>1</sub> and x<sub>2</sub> are distinct elements;otherwise we write x<sub>1</sub>=x<sub>2</sub>
+(設A和B為兩個集合，讓f為A到(into)B的映射。
+如果E&#8838A，f（E）被定義為所有元素f（x）的集合,對於x∈E。
+我們稱f（E）為在f下的像(image)。在這種表示法中，f（A）是f的值域。 很明顯的f(A）&#8838B。如果f（A）= B，我們說f將A映射到(onto)B。
+(注意，根據這種用法，滿射(onto)比into更具體<sub>Def1和Def2中的定義做比較</sub>。） 如果E&#8838B，f<sup>-1</sup>（E）是f下的E的逆像(inverse image)。
+如果y&#8712B，則f<sup>-1</sup>(y）是所有x&#8712A的集合，使得f（x）= y。 如果，對於每個y∈B，f<sup>-1</sup>(y）最多由A的一個元素組成 
+，比f被稱為A（1對1）到A的映射。 這也可以表示如下：f是A到B的1-1映射，條件是每當x<sub>1</sub>&#8800x<sub>2</sub>時f（x<sub>1</sub>）&#8800f（x<sub>2</sub>） 
+，x<sub>1</sub>&#8712A，x<sub>2</sub>&#8712A。（符號x<sub>1</sub>&#8800x<sub>2</sub>表示x<sub>1</sub>和x<sub>2</sub>是不同的元素;否則我們寫x<sub>1</sub> = x<sub>2</sub>)
+Def3:
+If there exists a 1-1 mapping of A onto B,we say that A and B,can be put in 1-1 correspondence
+,or that A and B have the same cardinal number,or briefly,that A and B are equivalent,and we write A&#8764 B.
+This relation clearly has the following properties:
+(如果存在A到B的1-1映射，我們說A和B可以放在1-1對應中
+，或A和B具有相同的基數(cardinal)，或簡單地說，A和B是等價的，我們寫A&#8764 B.     (基數是一一對應的意思)
+這種關係顯然具有以下特性：)
+1)It is reflexive(反身性): A&#8764 A
+2)It is symmetric(對稱性): A&#8764 B,thanB&#8764 C
+3)It is transitive(遞移性): If A&#8764 B and B&#8764 C,thenA&#8764 C
+
+Any relation with these three properties is called an equivalence relation.
+(有這三個性質的任何關係稱為等價關係)
+
+Def4: For any positive integer n,let J<sub>n</sub> be the set whose elements are the integers 1,2,...,n
+;let J be the set consisting of all positive integers.For any set A,we say:
+(對於任何正整數n，令J<sub>n</sub>為其元素為整數1,2，...，n的集合 ;讓J是由所有正整數組成的集合。對於任何集合A，我們說：)
+a)A is finite if A&#8764J<sub>n</sub> for some n(the empty set is also considered to be finite).(如果對於某些n，A&#8764J<sub>n</sub>，則A是有限的（空集合也被認為是有限的）)
+b)A is infinite if A is not finite(如果A不是有限的，則A是無限的)
+c)A is countable if A&#8764 J(A是可數的，如果A&#8764J)
+d)A is uncountable if A is neither finite nor countable.(如果A既不是有限的也不是可數的，那麼A是不可數的)
+e)A is at most countable if finite or countable.(A是最多可數,如果有限或可數)
+
+Countable sets are sometimes called enumerable,or denumerable.
+For two finite sets A and B ,we  evidently have A&#8764 B if and only if A and B
+contain the same number of elements. For infinite sets.however,the idea of "having
+the same number of elements" becomes quite vague,whereas the notion of 1-1 correspondence retains its clarity
+(可數集有時稱為可枚舉(enumerable)或可數(denumerable)。
+對於兩個有限集A和B，當且僅當A和B時，我們顯然有A&#8764 B.
+包含相同數量的元素。 然而對於無限集“有
+相同數量的元素“變得相當模糊，但1-1對應的概念保持清晰) 	
+</body>
+</html>
